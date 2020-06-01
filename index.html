@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <!-- Moment and Jquery linking-->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="moment/moment.min.js"></script>
+
+    <!-- Bootstrap linking-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <!-- Fontawesome linking-->
+    <link href="css/fontawesome.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <br><br>
+        <row>
+            <h1>Work Day Scheduler</h1>
+        </row>
+
+        <row>
+            <p>A simple app for scheduling your work day!</p>
+
+        </row>
+
+    </div>
+
+    <div id="dateToday"></div>
+
+    <br><br><br>
+
+    <div class="container" id="hourCont">
+        <div class="container">
+
+            <div class="row">
+              <div class="col-1" id="column1">
+                <hr>9am<hr>
+              </div>
+              <div class="col-10">
+               
+                <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                
+              </div>
+              <div class="col-1" id="column3">
+                <hr> <i class="fas fa-archive" type="button" id="saveBtn"></i> <hr>
+              </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1" id="column1">
+                  <hr>10am<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1" id="column1">
+                  <hr>11am<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+
+              <div class="row" >
+                <div class="col-1" id="column1">
+                  <hr>12pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1" id="column1">
+                  <hr>1pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1" id="column1">
+                  <hr>2pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button" ></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1" id="column1">
+                  <hr>3pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="col-1"id="column1">
+                  <hr>4pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+              <div class="row" >
+                <div class="col-1" id="column1">
+                  <hr>5pm<hr>
+                </div>
+                <div class="col-10">
+                    <hr> <div id="input" class ="txta" contenteditable></div> <hr>
+                </div>
+                <div class="col-1" id="column3">
+                    <hr> <i class="fas fa-archive" type="button"></i> <hr>
+                  </div>
+              </div>
+
+          </div>
+    </div>
+
+    <script>
+
+           
+
+        $(document).ready(function() {
+
+            let a = moment().format('LLLL');
+            $('#dateToday').text(a);
+        
+            //Trying to figure out how to change the colors of the array based on the current time. Select all columns 9am-5pm, take those values and strip them of the AM and PM and then compare them to the current time. 
+
+            $(".txta").on("keyup change", function() {
+            $("#dom_element").text(this.value);
+            if(e.keycode == 13)
+            
+             });
+
+             
+                
+
+            
+
+        });
+        
+        $("#saveBtn").on("click", function() {
+                var saving = $(".txta");
+
+
+      
+       
+       
+        //Figure out how to use moment
+    
+    
+    
+    
+    
+    </script>
+
+
+</body>
+
+</html>
+
+<!--
+    GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+
+WHEN I scroll down
+THEN I am presented with timeblocks for standard business hours
+
+WHEN I view the timeblocks for that day
+THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+
+WHEN I click into a timeblock
+
+THEN I can enter an event
+
+WHEN I click the save button for that timeblock
+THEN the text for that event is saved in local storage
+
+WHEN I refresh the page
+THEN the saved events persist
+
+-->
